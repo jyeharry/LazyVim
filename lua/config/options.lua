@@ -3,6 +3,7 @@
 -- Add any additional options here
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = "\\"
+vim.o.breakindent = true
 vim.o.foldlevel = 999
 vim.o.iskeyword = "@,48-57,192-255"
 vim.o.mouse = ""

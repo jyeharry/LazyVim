@@ -1,6 +1,3 @@
 return {
-  {
-    "romainl/vim-cool",
-    event = "User AstroFile",
-  },
+  { "romainl/vim-cool" },
 }
