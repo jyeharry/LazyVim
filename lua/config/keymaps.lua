@@ -10,6 +10,14 @@ end, { desc = "Delete buffer" })
 map("n", "<C-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 map("n", "<C-h>", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
 
+-- Window mappings
+vim.keymap.del("n", "<C-_>")
+vim.keymap.del("n", "<C-/>")
+map("n", "<C-.>", "2<C-w>>", { desc = "Increase window width" })
+map("n", "<C-,>", "2<C-w><", { desc = "Decrease window width" })
+map("n", "<C-S-=>", "2<C-w>+", { desc = "Increase window height", remap = false })
+map("n", "", "2<C-w>-", { desc = "Decrease window height", remap = false })
+
 map({ "n", "o", "v" }, "H", "^", { desc = "Beginning of line" })
 map({ "n", "o", "v" }, "L", "$", { desc = "End of line" })
 
