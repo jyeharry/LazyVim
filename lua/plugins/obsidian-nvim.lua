@@ -3,7 +3,7 @@ local functions = require("config.functions")
 return {
   {
     "epwalsh/obsidian.nvim",
-    event = { "BufReadPre  */second-brain/*.md" },
+    event = { "bufreadpre " .. vim.fn.expand("~") .. "/second-brain/**.md" },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "hrsh7th/nvim-cmp",
