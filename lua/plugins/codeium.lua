@@ -1,3 +1,3 @@
 return {
-  { "Exafunction/codeium.nvim", enabled = false },
+  { "Exafunction/codeium.nvim", enabled = true },
 }
