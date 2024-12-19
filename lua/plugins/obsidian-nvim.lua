@@ -133,6 +133,7 @@ return {
       follow_url_func = vim.ui.open,
 
       ui = {
+        enable = false,
         checkboxes = {
           [" "] = { char = "󰄱", hl_group = "ObsidianTodo" },
           ["~"] = { char = "󰰱", hl_group = "ObsidianTilde" },
