@@ -56,4 +56,21 @@ return {
       },
     },
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      setup = {
+        bashls = function(_, opts)
+          -- Add an autocmd to set the filetype for `.myzshrc`
+          vim.api.nvim_create_autocmd("BufEnter", {
+            pattern = ".myzshrc",
+            callback = function()
+              vim.bo.filetype = "sh"
+            end,
+          })
+          return opts
+        end,
+      },
+    },
+  },
 }
