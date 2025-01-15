@@ -1,6 +1,7 @@
 return {
   {
     "ibhagwan/fzf-lua",
+    enabled = false,
     opts = function(_, opts)
       local fzf = require("fzf-lua")
       local config = fzf.config
@@ -135,10 +136,5 @@ return {
         },
       }
     end,
-    keys = {
-      { "<leader>/", "<cmd>FzfLua live_grep_glob<CR>", desc = "Grep (Root Dir)" },
-      { "<leader>sg", "<cmd>FzfLua live_grep_glob<CR>", desc = "Grep (Root Dir)" },
-      { "<leader>sG", "<cmd>FzfLua live_grep_glob<CR>", desc = "Grep (cwd)" },
-    },
   },
 }
