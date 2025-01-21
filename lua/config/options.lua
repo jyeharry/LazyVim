@@ -5,6 +5,7 @@
 -- Global variables
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = "\\"
+vim.g.lazyvim_prettier_needs_config = false
 -- vim.g.snacks_animate = false
 
 -- Global options
