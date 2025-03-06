@@ -6,6 +6,11 @@ return {
         matcher = {
           frecency = true, -- frecency bonus
         },
+        sources = {
+          files = {
+            hidden = true,
+          },
+        },
       },
       scroll = {
         animate = {
