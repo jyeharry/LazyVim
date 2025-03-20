@@ -3,8 +3,8 @@
 -- Add any additional options here
 
 -- Global variables
-vim.g.mapleader = "\\"
-vim.g.maplocalleader = "\\"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.g.lazyvim_prettier_needs_config = true
 -- vim.g.snacks_animate = false
 
@@ -17,7 +17,7 @@ vim.o.lines = 40
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.scrolloff = 999
-vim.o.signcolumn = "auto:2-3"
+vim.o.signcolumn = "auto:2"
 vim.o.spell = false
 vim.o.virtualedit = "all"
 vim.o.wrap = true
