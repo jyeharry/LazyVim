@@ -23,8 +23,6 @@ map({ "n", "o", "v" }, "L", "$", { desc = "End of line" })
 map("n", "p", "p=`]", { desc = "Paste and match indentation" })
 map("n", "P", "P=`]", { desc = "Paste before and match indentation" })
 
-map("n", "<Space>", "za", { desc = "Toggle fold" })
-
 map("n", "U", "<C-r>", { desc = "Redo" })
 
 local wk = require("which-key")
