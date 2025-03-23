@@ -11,6 +11,20 @@ return {
             hidden = true,
           },
         },
+        win = {
+          input = {
+            keys = {
+              ["<c-h>"] = {
+                "toggle_hidden",
+                mode = { "n", "i" },
+              },
+              ["<c-i>"] = {
+                "toggle_ignored",
+                mode = { "n", "i" },
+              },
+            },
+          },
+        },
       },
       scroll = {
         animate = {
