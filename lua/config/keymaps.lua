@@ -36,3 +36,10 @@ wk.add({
     { "<leader>yf", "<cmd>let @+=expand('%:t')<CR>:echo 'Copied filename'<CR>", desc = "Filename" },
   },
 })
+
+vim.keymap.del("n", "n")
+vim.keymap.del("x", "n")
+vim.keymap.del("o", "n")
+vim.keymap.del("n", "N")
+vim.keymap.del("x", "N")
+vim.keymap.del("o", "N")
