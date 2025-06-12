@@ -1,7 +1,7 @@
 return {
   {
     "yetone/avante.nvim",
-    enabled = true,
+    enabled = false,
     event = "VeryLazy",
     version = false, -- Never set this value to "*"! Never!
     opts = {
@@ -60,6 +60,17 @@ return {
           file_types = { "markdown", "Avante" },
         },
         ft = { "markdown", "Avante" },
+      },
+      {
+        "folke/which-key.nvim",
+        opts = {
+          spec = {
+            {
+              mode = { "n", "v" },
+              { "<leader>a", group = "ai" },
+            },
+          },
+        },
       },
     },
   },
