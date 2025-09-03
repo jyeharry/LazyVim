@@ -10,6 +10,10 @@ return {
           files = {
             hidden = true,
           },
+          explorer = {
+            hidden = true,
+            ignored = true,
+          },
         },
         win = {
           input = {
