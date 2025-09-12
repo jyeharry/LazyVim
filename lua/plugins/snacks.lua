@@ -36,5 +36,25 @@ return {
         },
       },
     },
+    keys = {
+      { "<leader>/", LazyVim.pick("live_grep", { root = false }), desc = "Grep (cwd)" },
+      { "<leader><space>", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+      {
+        "<leader>fE",
+        function()
+          Snacks.explorer({ cwd = LazyVim.root() })
+        end,
+        desc = "Explorer Snacks (root dir)",
+      },
+      {
+        "<leader>fe",
+        function()
+          Snacks.explorer()
+        end,
+        desc = "Explorer Snacks (cwd)",
+      },
+      { "<leader>E", "<leader>fE", desc = "Explorer Snacks (root dir)", remap = true },
+      { "<leader>e", "<leader>fe", desc = "Explorer Snacks (cwd)", remap = true },
+    },
   },
 }
