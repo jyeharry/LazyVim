@@ -7,8 +7,23 @@ return {
       function() require("sidekick.cli").toggle({ name = "opencode", focus = true }) end,
       desc = "Sidekick OpenCode Toggle",
     },
-    -- Example of a keybinding to open Claude directly
-    -- (included from folke, not for me)
-    { "<leader>ac", false },
+    {
+      "<leader>aT",
+      function() require("sidekick.nes").toggle() end,
+      mode = { "n" },
+      desc = "Toggle NES",
+    },
+    {
+      "<leader>au",
+      function() require("sidekick.nes").update() end,
+      mode = { "n" },
+      desc = "Update NES",
+    },
+    {
+      "<leader>ac",
+      function() require("sidekick.nes").clear() end,
+      mode = { "n" },
+      desc = "Clear NES",
+    },
   },
 }

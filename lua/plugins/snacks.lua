@@ -26,6 +26,12 @@ return {
                 "toggle_ignored",
                 mode = { "n", "i" },
               },
+              ["M"] = { "toggle_maximize", mode = { "n" } },
+            },
+          },
+          list = {
+            keys = {
+              ["M"] = { "toggle_maximize", mode = { "n" } },
             },
           },
         },
