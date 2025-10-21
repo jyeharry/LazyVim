@@ -12,6 +12,7 @@ return {
       desc = "Open",
     },
     { "<leader>gDc", "<cmd>DiffviewClose<CR>", desc = "Close" },
+    { "<leader>gDe", "<cmd>DiffviewToggleFiles<CR>", desc = "Toggle File Explorer" },
     {
       "<leader>gDf",
       function()
