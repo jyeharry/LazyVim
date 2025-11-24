@@ -3,11 +3,11 @@
 -- Add any additional options here
 
 -- Global variables
-vim.g.ai_cmp = true
-vim.g.lazyvim_prettier_needs_config = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.root_spec = { { ".git", "lua" }, "cwd" }
+vim.g.lazyvim_prettier_needs_config = true
+vim.g.ai_cmp = true
+-- vim.g.root_spec = { { ".git", "lua" }, "cwd" }
 -- vim.g.snacks_animate = false
 
 -- Global options
