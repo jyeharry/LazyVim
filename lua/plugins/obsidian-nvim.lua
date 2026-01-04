@@ -10,33 +10,22 @@ return {
       "nvim-telescope/telescope.nvim",
     },
     keys = {
-      {
-        "gf",
-        function()
-          if require("obsidian").util.cursor_on_markdown_link() then
-            return "<Cmd>ObsidianFollowLink<CR>"
-          else
-            return "gf"
-          end
-        end,
-        desc = "Obsidian Follow Link",
-      },
-      { "<leader>O", "", desc = "Obsidian", mode = { "n", "v" } },
-      { "<leader>OD", "<Cmd>ObsidianDailies<CR>", desc = "Dailies" },
-      { "<leader>OT", "<Cmd>ObsidianTags<CR>", desc = "Tags" },
-      { "<leader>Ob", "<Cmd>ObsidianBacklinks<CR>", desc = "Backlinks" },
+      { "<leader>O",  "",                                desc = "Obsidian",       mode = { "n", "v" } },
+      { "<leader>OD", "<Cmd>ObsidianDailies<CR>",        desc = "Dailies" },
+      { "<leader>OT", "<Cmd>ObsidianTags<CR>",           desc = "Tags" },
+      { "<leader>Ob", "<Cmd>ObsidianBacklinks<CR>",      desc = "Backlinks" },
       { "<leader>Oc", "<Cmd>ObsidianToggleCheckbox<CR>", desc = "Toggle Checkbox" },
-      { "<leader>Od", "<Cmd>ObsidianToday<CR>", desc = "Today" },
-      { "<leader>Of", "<Cmd>ObsidianQuickSwitch<CR>", desc = "Find notes" },
-      { "<leader>Og", "<Cmd>ObsidianSearch<CR>", desc = "Grep" },
-      { "<leader>Oi", "<Cmd>ObsidianPasteImg<CR>", desc = "Paste Image" },
-      { "<leader>Ol", "<Cmd>ObsidianLinks<CR>", desc = "Links" },
-      { "<leader>On", "<Cmd>ObsidianNew<CR>", desc = "New Note" },
-      { "<leader>Oo", "<Cmd>ObsidianOpen<CR>", desc = "Open" },
-      { "<leader>Op", "<Cmd>ObsidianTemplate<CR>", desc = "Insert Template" },
-      { "<leader>Or", "<Cmd>ObsidianRename<CR>", desc = "Rename" },
-      { "<leader>Ot", "<Cmd>ObsidianTomorrow<CR>", desc = "Tomorrow" },
-      { "<leader>Oy", "<Cmd>ObsidianYesterday<CR>", desc = "Yesterday" },
+      { "<leader>Od", "<Cmd>ObsidianToday<CR>",          desc = "Today" },
+      { "<leader>Of", "<Cmd>ObsidianQuickSwitch<CR>",    desc = "Find notes" },
+      { "<leader>Og", "<Cmd>ObsidianSearch<CR>",         desc = "Grep" },
+      { "<leader>Oi", "<Cmd>ObsidianPasteImg<CR>",       desc = "Paste Image" },
+      { "<leader>Ol", "<Cmd>ObsidianLinks<CR>",          desc = "Links" },
+      { "<leader>On", "<Cmd>ObsidianNew<CR>",            desc = "New Note" },
+      { "<leader>Oo", "<Cmd>ObsidianOpen<CR>",           desc = "Open" },
+      { "<leader>Op", "<Cmd>ObsidianTemplate<CR>",       desc = "Insert Template" },
+      { "<leader>Or", "<Cmd>ObsidianRename<CR>",         desc = "Rename" },
+      { "<leader>Ot", "<Cmd>ObsidianTomorrow<CR>",       desc = "Tomorrow" },
+      { "<leader>Oy", "<Cmd>ObsidianYesterday<CR>",      desc = "Yesterday" },
       {
         "<leader>Oe",
         function()
