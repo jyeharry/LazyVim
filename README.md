@@ -5,5 +5,5 @@ git clone https://github.com/jyeharry/LazyVim ~/.config/nvim
 ```
 
 ```
-gh repo clone LazyVim
+gh repo clone LazyVim ~/.config/nvim
 ```
