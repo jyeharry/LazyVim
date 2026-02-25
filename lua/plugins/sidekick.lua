@@ -9,6 +9,14 @@ return {
       desc = "Sidekick OpenCode Toggle",
     },
     {
+      "<c-.>",
+      function()
+        require("sidekick.cli").toggle({ name = "opencode", focus = true })
+      end,
+      desc = "Sidekick Toggle",
+      mode = { "n", "t", "i", "x" },
+    },
+    {
       "<leader>aT",
       function()
         require("sidekick.nes").toggle()
@@ -38,6 +46,29 @@ return {
         require("sidekick.cli").select({ filter = { installed = true } })
       end,
       desc = "Select CLI",
+    },
+    {
+      "<leader>at",
+      function()
+        require("sidekick.cli").send({ name = "opencode", msg = "{this}" })
+      end,
+      mode = { "x", "n" },
+      desc = "Send This",
+    },
+    {
+      "<leader>af",
+      function()
+        require("sidekick.cli").send({ name = "opencode", msg = "{file}" })
+      end,
+      desc = "Send File",
+    },
+    {
+      "<leader>av",
+      function()
+        require("sidekick.cli").send({ name = "opencode", msg = "{selection}" })
+      end,
+      mode = { "x" },
+      desc = "Send Visual Selection",
     },
   },
 }
