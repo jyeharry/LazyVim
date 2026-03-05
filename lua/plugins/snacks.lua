@@ -30,6 +30,8 @@ return {
                 mode = { "n", "i" },
               },
               ["M"] = { "toggle_maximize", mode = { "n" } },
+              ["<C-j>"] = { "history_forward", mode = { "i", "n" } },
+              ["<C-k>"] = { "history_back", mode = { "i", "n" } },
             },
           },
           list = {
