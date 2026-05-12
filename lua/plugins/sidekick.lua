@@ -4,6 +4,17 @@ return {
     nes = {
       enabled = false,
     },
+    cli = {
+      ---@class sidekick.win.Opts
+      win = {
+        --- CLI Tool Keymaps (default mode is `t`)
+        ---@type table<string, sidekick.cli.Keymap|false>
+        -- stylua: ignore
+        keys = {
+          prompt = { "<c-a>", "prompt"    , mode = "t" , desc = "insert prompt or context" },
+        },
+      },
+    },
   },
   keys = {
     {

@@ -30,6 +30,8 @@ wk.add({
   },
 })
 
+-- let n and N jump in the direction of the search instead of always forwards in
+-- the page for n and backwards for N
 vim.keymap.del("n", "n")
 vim.keymap.del("x", "n")
 vim.keymap.del("o", "n")
