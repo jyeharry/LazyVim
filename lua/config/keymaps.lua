@@ -7,8 +7,8 @@ local map = vim.keymap.set
 map("n", "<C-c>", function()
   Snacks.bufdelete()
 end, { desc = "Delete buffer" })
-map("n", "<C-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
-map("n", "<C-h>", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
+-- map("n", "<C-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+-- map("n", "<C-h>", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
 
 map({ "n", "o", "v" }, "H", "^", { desc = "Beginning of line" })
 map({ "n", "o", "v" }, "L", "$", { desc = "End of line" })
@@ -23,10 +23,31 @@ wk.add({
   {
     "<leader>y",
     group = "Yank",
-    { "<leader>ya", "<cmd>let @+=expand('%:p')<CR>:echo 'Copied absolute path'<CR>", desc = "Absolute Path" },
-    { "<leader>yr", "<cmd>let @+=expand('%:.')<CR>:echo 'Copied relative path'<CR>", desc = "Relative Path" },
-    { "<leader>yd", "<cmd>let @+=expand('%:h:t')<CR>:echo 'Copied directory name'<CR>", desc = "Directory Name" },
-    { "<leader>yf", "<cmd>let @+=expand('%:t')<CR>:echo 'Copied filename'<CR>", desc = "Filename" },
+    icon = "󰆏",
+    {
+      "<leader>ya",
+      "<cmd>let @+=expand('%:p')<CR>:echo 'Copied absolute path'<CR>",
+      desc = "Absolute Path",
+      icon = "/",
+    },
+    {
+      "<leader>yr",
+      "<cmd>let @+=expand('%:.')<CR>:echo 'Copied relative path'<CR>",
+      desc = "Relative Path",
+      icon = "~",
+    },
+    {
+      "<leader>yd",
+      "<cmd>let @+=expand('%:h:t')<CR>:echo 'Copied directory name'<CR>",
+      desc = "Directory Name",
+      icon = "",
+    },
+    {
+      "<leader>yf",
+      "<cmd>let @+=expand('%:t')<CR>:echo 'Copied filename'<CR>",
+      desc = "Filename",
+      icon = "󰈔",
+    },
   },
 })
 
@@ -38,3 +59,7 @@ vim.keymap.del("o", "n")
 vim.keymap.del("n", "N")
 vim.keymap.del("x", "N")
 vim.keymap.del("o", "N")
+
+-- vertical window movement maps
+-- vim.keymap.del("n", "<C-j>")
+-- vim.keymap.del("n", "<C-k>")
