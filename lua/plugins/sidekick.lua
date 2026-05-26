@@ -11,7 +11,7 @@ return {
         ---@type table<string, sidekick.cli.Keymap|false>
         -- stylua: ignore
         keys = {
-          prompt = { "<c-a>", "prompt"    , mode = "t" , desc = "insert prompt or context" },
+          prompt = false,
         },
       },
     },
