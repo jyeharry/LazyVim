@@ -35,7 +35,12 @@ return {
       preserve_case = true,
     })
 
-    table.insert(opts.groups.default or {}, months)
-    table.insert(opts.groups.default or {}, directions)
+    opts.dials_by_ft = opts.dials_by_ft or {}
+    opts.groups = opts.groups or {}
+    opts.groups.default = opts.groups.default or {}
+    table.insert(opts.groups.default, months)
+    table.insert(opts.groups.default, directions)
+
+    return opts
   end,
 }
