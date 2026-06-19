@@ -6,6 +6,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.lazyvim_prettier_needs_config = true
+-- vim.g.lazyvim_ts_lsp = "tsgo"
 vim.g.ai_cmp = true
 vim.g.root_spec = { { "pnpm-workspace.yaml", "turbo.json" }, "lsp", { ".git", "lua" }, "cwd" }
 -- vim.g.snacks_animate = false
