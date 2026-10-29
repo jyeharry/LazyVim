@@ -46,6 +46,17 @@ local function attach_toc(buf)
       icon = "󰗚",
       buffer = buf,
     },
+    {
+      "gO",
+      function()
+        provider()
+        vim.cmd("lclose") -- hide the plain loclist window
+        Snacks.picker.loclist({ formatters = { file = { filename_only = true } } })
+      end,
+      desc = "Outline (TOC)",
+      icon = "󰗚",
+      buffer = buf,
+    },
   })
 end
 
